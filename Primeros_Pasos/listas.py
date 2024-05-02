@@ -1,5 +1,6 @@
 # Crea una lista
 trabajadores = ["Juan", 6, "Ana", "Pedro", "María", True]
+trabajadores2 = ["Pilar", "Amancio"]
 
 # Imprime en consola los elementos de una lista
 print(trabajadores)
@@ -7,7 +8,13 @@ print(trabajadores)
 # Imprime en consola el primer elemento de una lista
 print(trabajadores[0]) # Accede por el principio de la lista
 print(trabajadores[-1]) # Accede por el final de la lista
-print(trabajadores[0:3]) # Accede desde el primer elemento hasta el tercero sin incluirlo
+
+# Primer valos es el índice donde empieza a contar. El segundo valor dónde para y siempre
+# empezando desde el primer valor.
+print(trabajadores[2:4]) # ["Ana", "Pedro"]
+
+# Unir dos listas
+print(trabajadores + trabajadores2)
 
 # Agrega un elemento al final de una lista.
 # Uso común: Cuando deseas agregar un solo elemento a una lista existente.
@@ -23,6 +30,12 @@ print(trabajadores)
 # Modifica la lista original al eliminar el elemento. Si el elemento aparece más de una vez 
 # en la lista, solo se eliminará la primera aparición.
 trabajadores.remove("Pedro")
+
+# Eliminar un elemento según el índice dado
+del trabajadores[3] # Eliminamos a Pedro
+
+# Imprimir el índice de un elemento
+print(trabajadores.index("Ana"))
 
 
 # Indica el tamaño de una lista
